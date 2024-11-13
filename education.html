@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education and Certifications</title>
+    <style>
+      /* styles.css */
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000; /* Black background */
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .main-content {
+        display: flex;
+        gap: 40px; /* Space between education and certifications */
+        max-width: 1000px;
+        padding: 20px;
+      }
+
+      .education-section,
+      .certifications-section {
+        background-color: #1a1a1a; /* Dark gray for contrast */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        width: 45%; /* Half-width for side-by-side layout */
+      }
+
+      .education-section h2,
+      .certifications-section h2 {
+        font-size: 24px;
+        color: #ff577f;
+        /* Light blue accent color */
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .education-details,
+      .certification-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .education-item,
+      .certification-item {
+        margin-bottom: 15px;
+        width: 100%;
+        border-bottom: 1px solid #333; /* Light border between items */
+        padding-bottom: 10px;
+      }
+
+      .education-item h3,
+      .certification-item h3 {
+        font-size: 20px;
+        color: white; /* Golden yellow for institution names */
+        margin: 0;
+      }
+
+      .education-item .degree,
+      .certification-item .institution,
+      .certification-item .year,
+      .education-item .cgpa {
+        font-size: 16px;
+        color: #ddd; /* Light gray for additional details */
+        margin: 5px 0;
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          gap: 20px; /* Adjust gap for smaller screens */
+        }
+        .education-section,
+        .certifications-section {
+          width: 100%; /* Full width on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-content">
+      <!-- Education Section -->
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="education-details">
+          <div class="education-item">
+            <h3>Welfare Institute of Science and Technology Management</h3>
+            <p class="degree">Bachelor's in Computer Science (2020 - 2024)</p>
+            <p class="cgpa">CGPA: 8.02</p>
+          </div>
+          <div class="education-item">
+            <h3>Sri Chaitanya Junior College</h3>
+            <p class="degree">Intermediate (2018 - 2020)</p>
+            <p class="cgpa">CGPA: 7.12</p>
+          </div>
+          <div class="education-item">
+            <h3>Mohan Secondary School</h3>
+            <p class="degree">X SSC (2018)</p>
+            <p class="cgpa">CGPA: 8.8</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div class="certifications-section">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+          <h3>UI/UX Designer Certification</h3>
+          <p class="institution">Tech Mahindra Foundation SMART Academy</p>
+          <p class="year">2024</p>
+        </div>
+        <div class="certification-item">
+          <h3>Machine Learning Certification</h3>
+          <p class="institution">Appleton Innovation</p>
+          <p class="year">2022</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
